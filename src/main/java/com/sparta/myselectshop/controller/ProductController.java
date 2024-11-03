@@ -26,7 +26,7 @@ public class ProductController {
 
     @PutMapping("/products/{id}")
     public ProductResponseDto updateProduct(@PathVariable Long id, @RequestBody ProductMypriceRequestDto requestDto) {
-        return productService.update(id, requestDto);
+        return productService.updateProduct(id, requestDto);
     }
 
     @GetMapping("/products")
